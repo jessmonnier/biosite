@@ -1,0 +1,92 @@
+/*
+Jess Monnier
+CSD-340 Biosite Assignment
+Created: 7 April 2025
+Updated: 11 April 2025
+*/
+body {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+}
+#header {
+    background-image: url('images/yosemite.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    width: 100%;
+    aspect-ratio: 8 / 3;
+    margin: 0px;
+    padding: 0px;
+}
+#headersmall {
+    background-image: url('images/yosemite.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    width: 100%;
+    aspect-ratio: 4 / 1;
+    margin: 0px;
+    padding: 0px;
+}
+#title {
+    float: left;
+    margin: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    color: #051373;
+}
+#nav {
+    float: right;
+    margin: 25px;
+    font-size: 25px;
+}
+#nav a, #title a, #title span {
+    padding: 10px;
+}
+#nav a:hover, #title a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.current {
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    color: #142486;
+}
+#container {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+}
+h1 {
+    font-weight: 500;
+    font-size: 25px;
+    color: #3847a6;
+}
+h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #051372;
+}
+a {
+    color: #142486;
+    text-decoration: none;
+    font-weight: 500;
+}
+a:hover {
+    color: #3847a6;
+}
+ul {
+    list-style: none;
+    position: relative;
+}
+li::before {
+    color: #051372;
+    content: '➺';
+    position: absolute;
+    left: 4px;
+}
