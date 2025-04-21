@@ -2,16 +2,34 @@
 Jess Monnier
 CSD-340 Biosite Assignment
 Created: 7 April 2025
-Updated: 11 April 2025
+Updated: 20 April 2025
 */
-body {
+body, footer {
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-size: 18px;
-    padding: 0px;
     margin: 0px;
+}
+body {
+    padding: 0px;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #4B7FC7;
+    color: #fff;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+footer div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #header {
     background-image: url('images/yosemite.jpg');
@@ -62,6 +80,9 @@ body {
     margin-right: 100px;
     padding-top: 20px;
 }
+#pad {
+    height: 80px;
+}
 h1 {
     font-weight: 500;
     font-size: 25px;
@@ -89,4 +110,32 @@ li::before {
     content: '➺';
     position: absolute;
     left: 4px;
+}
+.text-left {
+    display: inline-block;
+    padding-right: 10px;
+    width: 68%;
+}
+.image-right {
+    display: inline-block;
+    padding-left: 10px;
+    text-align: center;
+    width: 27%;
+}
+.about-img {
+    width: 95%;
+    height: auto;
+}
+#gallery {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+figure {
+    margin-bottom: 0px;
+    text-align: center;
+}
+figcaption {
+    text-align: center;
+    font-size: 14px;
 }
