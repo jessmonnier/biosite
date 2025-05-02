@@ -2,7 +2,7 @@
 Jess Monnier
 CSD-340 Biosite Assignment
 Created: 7 April 2025
-Updated: 21 April 2025
+Updated: 2 May 2025
 */
 body, footer {
     font-family: "Mulish", sans-serif;
@@ -19,7 +19,7 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    background-color: #4B7FC7;
+    background-color: #4b7fc7;
     color: #fff;
     text-align: center;
     padding-left: 0px;
@@ -31,6 +31,7 @@ footer div {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+/* Index header (it's a bit taller) */
 #header {
     background-image: url('images/yosemite.jpg');
     background-repeat: no-repeat;
@@ -41,6 +42,7 @@ footer div {
     margin: 0px;
     padding: 0px;
 }
+/* Header for the other pages */
 #headersmall {
     background-image: url('images/yosemite.jpg');
     background-repeat: no-repeat;
@@ -65,21 +67,28 @@ footer div {
 }
 #nav a, #title a, #title span {
     padding: 10px;
+    border-radius: 10%;
 }
 #nav a:hover, #title a:hover {
     background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(5, 19, 114, 0.2);
 }
+/* This is used to style the current page's nav text, e.g. 
+    "About" in the nav bar when on the About page. */
 .current {
     font-weight: 400;
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
     color: #142486;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 rgba(5, 19, 114, 0.2);
 }
 #container {
     margin-left: 80px;
     margin-right: 80px;
     padding-top: 20px;
 }
+/* Used to create space for the fixed footer */
 #pad {
     height: 80px;
 }
@@ -111,11 +120,16 @@ li::before {
     position: absolute;
     left: 4px;
 }
+/* Used on the about page to achieve the image inline with text */
 .inline-text {
     display: inline-block;
     margin: 0px;
     padding: 0px;
 }
+.inline-text p {
+    text-indent: 40px;
+}
+/* Used on the about page to achieve the image inline with text */
 .image-right {
     float: right;
     text-align: center;
@@ -125,6 +139,7 @@ li::before {
 .gal-img {
     width: 95%;
     height: auto;
+    border-radius: 5%;
 }
 #gallery {
     display: grid;
@@ -141,4 +156,11 @@ figure {
 figcaption {
     text-align: center;
     font-size: 14px;
+    color: #051372;
+}
+/* rgb(75, 127, 199) = #4b7fc7 (the footer color) */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(75, 127, 199, 0.25), rgba(75, 127, 199, 1), rgba(75, 127, 199, 0.25));
 }
